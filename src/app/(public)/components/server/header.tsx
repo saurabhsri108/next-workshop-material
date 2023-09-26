@@ -1,24 +1,27 @@
+import ClientLink from "@/app/(public)/components/client/ClientLink";
 import Link from "next/link";
 
-const Header = () => {
+const Header = async () => {
+  const navigations: Navigation[] = await (
+    await fetch(`${process.env.JSON_URL}/navigations`, {
+      cache: "no-cache",
+    })
+  ).json();
+
   return (
     <header className="h-full bg-slate-950 px-4 text-slate-50">
       <section className="mx-auto flex max-w-6xl items-center justify-between py-4">
         <div className="flex items-center justify-start gap-6">
-          <Link href="/" className="font-bold">
-            Next13 App Router
-          </Link>
+          <ClientLink path="/" name="Next13 App Router" />
           <nav>
             <ul className="flex items-center justify-start gap-2">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/blog/1">Blogs</Link>
-              </li>
+              {navigations.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <ClientLink path={item.path} name={item.name} />
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>
@@ -43,6 +46,12 @@ const Header = () => {
       </section>
     </header>
   );
+};
+
+type Navigation = {
+  id: number;
+  name: string;
+  path: string;
 };
 
 export default Header;

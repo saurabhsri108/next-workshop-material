@@ -1,10 +1,10 @@
 import "./../styles/globals.css";
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
-import Header from "./header";
-import Footer from "./footer";
+import { Inter } from "next/font/google";
+import Header from "./(public)/components/server/header";
+import Footer from "./(public)/components/server/footer";
 
-// const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "NextJS 13 - App Router",
@@ -16,12 +16,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log("Root Layout");
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className={inter.variable}>
+      <body className="flex min-h-screen flex-col">
         <Header />
-        {children}
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>

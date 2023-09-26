@@ -1,12 +1,148 @@
 {
   "users": [
-    { "id": 1, "name": "John Doe", "email": "john@doe.com", "phone": "" },
-    { "id": 2, "name": "Jane Doe", "email": "jane@doe.com", "phone": "" },
-    { "id": 3, "name": "John Smith", "email": "john@smith.com", "phone": "" }
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@doe.com",
+      "phone": ""
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane@doe.com",
+      "phone": ""
+    },
+    {
+      "id": 3,
+      "name": "John Smith",
+      "email": "john@smith.com",
+      "phone": ""
+    }
   ],
   "posts": [
-    { "id": 1, "title": "Post 1", "description": "This is post one body" },
-    { "id": 2, "title": "Post 2", "description": "This is post two body" },
-    { "id": 3, "title": "Post 3", "description": "This is post three body" }
+    {
+      "id": 1,
+      "title": "Post 1",
+      "description": "This is post one body"
+    },
+    {
+      "id": 2,
+      "title": "Post 2",
+      "description": "This is post two body"
+    },
+    {
+      "id": 3,
+      "title": "Post 3",
+      "description": "This is post three body"
+    }
+  ],
+  "navigations": [
+    {
+      "id": 1,
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "id": 3,
+      "name": "Blogs",
+      "path": "/blog/1"
+    },
+    {
+      "id": 4,
+      "name": "Contact Us",
+      "path": "/contact"
+    },
+    {
+      "id": 5,
+      "name": "Pricing",
+      "path": "/pricing"
+    }
+  ],
+  "analytics": [
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 1
+    },
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 2
+    },
+    {
+      "event": "cta_clicked",
+      "data": {
+        "name": "Go to blog",
+        "pageSection": "Hero"
+      },
+      "id": 3
+    },
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 4
+    },
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 5
+    },
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 6
+    },
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 7
+    },
+    {
+      "event": "cta_clicked",
+      "data": {
+        "name": "Go to blog",
+        "pageSection": "Hero"
+      },
+      "id": 8
+    },
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 9
+    },
+    {
+      "event": "logo_clicked",
+      "data": {
+        "name": "Next13 App Router",
+        "pageSection": "Header"
+      },
+      "id": 10
+    }
   ]
 }
