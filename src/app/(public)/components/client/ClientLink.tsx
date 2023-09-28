@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 const ClientLink = ({ path, name }: { path: string; name: string }) => {
   const pathname = usePathname();
   const sendAnalytics = async () => {
-    console.log({ name });
     if (name === "Next13 App Router") {
       const data = {
         event: "logo_clicked",

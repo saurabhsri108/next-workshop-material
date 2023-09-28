@@ -3,7 +3,6 @@ import coffeeImage from "@/app/(public)/assets/images/coffee.jpg";
 import ClientButton from "./(public)/components/client/ClientButton";
 
 const Home = () => {
-  console.log("Server");
   return (
     <section className="mt-6 flex h-full items-center justify-between px-4">
       <section className="flex flex-1 flex-col items-start justify-start gap-2">

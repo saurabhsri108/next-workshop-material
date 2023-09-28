@@ -4,7 +4,7 @@ import { Sidebar } from "./sidebar";
 const BlogLayout = async ({ children }: { children: React.ReactNode }) => {
   return (
     <Fragment>
-      <section className="flex items-start justify-between gap-4">
+      <section className="mt-4 flex items-start justify-between gap-4 px-4 ">
         <Sidebar />
         {children}
       </section>
