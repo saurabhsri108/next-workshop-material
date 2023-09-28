@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "json-server": "json-server --watch db.json --port 5000",
-    "c": "concurrently \"next dev\" \"json-server --watch db.json --port 5000\""
+    "json-server": "json-server --watch db.json --port 5500",
+    "c": "concurrently \"next dev\" \"json-server --watch db.json --port 5500\""
   },
   "dependencies": {
     "@types/node": "20.7.0",

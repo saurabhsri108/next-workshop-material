@@ -7,8 +7,16 @@ import Footer from "./(public)/components/server/footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "NextJS 13 - App Router",
-  description: "Learning in public",
+  metadataBase: new URL("https://example.com"),
+  title: {
+    default: "NextJS 13 - App Router",
+    template: `%s | NextJS 13 - App Router`,
+  },
+  description: "NextJS App Router Workshop",
+  verification: {
+    google: "google-site-verification=123456",
+    yandex: "yandex",
+  },
 };
 
 export default function RootLayout({
